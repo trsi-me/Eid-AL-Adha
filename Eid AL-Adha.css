@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif; }
+
+:root {
+    --smaller-font: .75rem;
+    --normal-font: 1.5rem;
+    --biggest-font: 2.375rem; }
+
+body {
+    background: linear-gradient(-130deg, #182848, #4B6CB7);
+    font-size: var(--normal-font);
+    font-weight: 600;
+    color: #FFF; }
+
+.home {
+    padding: 5rem 0 2rem;
+    height: 100vh;
+    display: grid; }
+
+.home-containner {
+    display: grid;
+    justify-content: center; }
+    
+.home-data {
+    text-align: center; }
+    
+img {
+    max-width: 100%;
+    height: auto; }
+    
+.home-img img {
+    animation: sheep-float 2s infinite alternate; }
+    
+.sheep-shadow {
+    width: 130px; height: 24px;
+    background-color: #3b332629;
+    margin: 0 auto;
+    border-radius: 50%;
+    filter: blur(7px);
+    animation: sheep-shadow 2s infinite alternate; }
+    
+@keyframes sheep-float {
+    0% {
+        transform: translateY(0); }
+    100% {
+        transform: translateY(15px); } }
+    
+@keyframes sheep-shadow {
+    0% {
+        transform: scale(1, 1); }
+    100% {
+        transform: scale(1, 1.5); } }
+    
+@media screen and (min-width: 1024px) {
+    :root {
+        --smaller-font: .833rem;
+        --normal-font: 1.5rem;
+        --biggest-font: 5rem; } }
+    
+@media screen and (min-width: 320px) {
+    .home {
+        padding-top: 7rem;} }
+    
+@media screen and (min-width: 1024px) {
+    .home-containner {
+        align-items: center;
+        column-gap: 2rem; }
+    
+    .home-data {
+        text-align: center; }
+        
+    .home-img img {
+        width: 400px }
+    
+    .sheep-shadow {
+        width: 250px; height: 40px; } }
+    
+@media screen and (min-width: 1048px) {
+    .containner {
+        margin-left: auto; margin-right: auto; } }
+    
+@media screen and (min-width: 2048px) {
+    body {
+        zoom: 1.7 }
+    
+    .home {
+        height: initial;
+        row-gap: 4rem; } }
+    
+@media screen and (min-width: 3848px) {
+    body {
+        zoom: 3.1 } }
